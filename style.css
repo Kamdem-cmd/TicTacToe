@@ -1,11 +1,13 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     font-family: poppins;
 }
 body{
-    padding-top: 75px;
+    padding-top: 25px;
     justify-items: center;
+    background-color: beige;
 }
 h1{
     font-size: 45px;
@@ -14,23 +16,46 @@ h1, span{
     color: rgb(95, 97, 97);
 }
 .cell{
+    text-align: center;
     font-family: poppins;
     font-size: 75px;
     color: rgb(95, 97, 97);
     cursor: pointer;
+    width: 140px;
+    height: 140px;
+    background-color: beige;
 }
+
+.cell:hover{
+    border: solid green;
+}
+
 .Board{
     border-radius: 30px;
     justify-items: center;
-    background-color: aliceblue;
+    background-color: rgb(230, 230, 230);
     display: grid;
-    width: 450px;
-    height: 450px;
+    width: 465px;
+    height: 465px;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 20px;
+    grid-gap: 5px;
+    border: solid rgb(230, 230, 230);
+    box-shadow: rgb(171, 176, 100) 3px 7px 3px 7px;
 }
 .annonce{
     margin-top: 25px;
     font-size: 20px;
     color: rgb(95, 97, 95);
+}
+#gameEnd{
+    color: rgb(95, 97, 97);;
+    display: none;
+    cursor: pointer;
+    transform: scale(1);
+    opacity: 1;
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+#gameEnd:hover{
+    transform: scale(1.1);
+    opacity: 0.8;
 }

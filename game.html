@@ -4,23 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
     <title>TicTacToe</title>
 </head>
 <body>
     <h1>jeu de:</h1>
     <span>TicTacToe</span>
     <div class="Board" id="board">
-            <div class="cell">X</div>
-            <div class="cell">X</div>
-            <div class="cell">X</div>
-            <div class="cell">X</div>
-            <div class="cell">X</div>
-            <div class="cell">X</div>
-            <div class="cell">X</div>
-            <div class="cell">X</div>
-            <div class="cell">X</div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
     </div>
-    <div class="annonce">Vous avez gagner!!!</div>
+    <div class="annonce">Le joueur1 (X) commence </div>
+    <div id="gameEnd" onclick="reloadGame()"> <h2>Recommencer!!!</h2></div>
 </body>
 </html>
